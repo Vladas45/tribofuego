@@ -1,0 +1,209 @@
+/* {{{ COMMON + HEADER */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, table, form {margin : 0; padding : 0px;}
+
+body {
+    background : url('../images/bg-site.gif') 0 0 repeat;
+    text-align : center; /* ie6 center */
+    /* font : 15px "Georgia",serif; */
+    font : 13px "Tahoma",sans-serif;
+    margin-bottom : 40px;
+}
+textarea {font : 13px "Tahoma",sans-serif;}
+a {color : #D90623;}
+a span {cursor : pointer;}
+a img {border : 0}
+
+h3{color : #621F1D; margin-top : 30px; margin-bottom : 10px;}
+h4{color : #9D191F; margin-top : -10px;}
+
+p {margin : 10px 0; line-height : 1.5em;}
+
+.cleaner {
+    clear : both;
+    _font-size : 1px; /* ie6 height fix */
+}
+
+.hide {display : none;}
+
+#page-holder {
+    text-align : left;
+    width : 700px;
+    margin : auto;
+}
+
+#header {
+    width : 450px;
+    height : 180px;
+    background : url('../images/logo.gif') 0 10px no-repeat;
+    margin-bottom : -50px;
+    position : relative;
+    z-index : 1;
+    margin-left : 231px;
+    padding-top : 10px;
+}
+
+#logo {
+    width : 346px;
+    height : 70px;
+    position : relative;
+    z-index : 1;
+    margin-top : 43px;
+    margin-left : 36px;
+}
+#logo a,
+#logo a span {
+    display : block;
+    width : 100%;
+    height : 100%;
+}
+#logo a span {
+    position : absolute;
+    z-index : 1;
+    background : url('../images/logo2.gif') 0 0 no-repeat;
+}
+
+#language {
+    font-weight : 800;
+    margin-left:20px;
+    margin-top:33px;
+}
+/* }}} */
+
+/* {{{ MENU */
+#menu {
+    width : 230px;
+    height : 555px;
+    background : url('../images/menu.gif') 0 0 no-repeat;
+    margin-left : 1px;
+    position : absolute;
+    top : 7px;
+    z-index : 1;
+    list-style : none;
+}
+#menu li {position : absolute; z-index : 1;}
+#menu li.kdo-jsme     {width : 49px; height : 39px; top : 144px; left : 146px;}
+#menu li.galerie      {width : 57px; height : 18px; top : 199px; left : 34px;}
+#menu li.srazy        {width : 55px; height : 19px; top : 256px; left : 135px;}
+#menu li.gb           {width : 56px; height : 38px; top : 300px; left : 39px;}
+#menu li.video        {width : 47px; height : 17px; top : 372px; left : 148px;}
+#menu li.kontakt      {width : 63px; height : 19px; top : 481px; left : 123px;}
+
+#menu li a,
+#menu li span {display : block; width : 100%; height : 100%;}
+#menu li a {font-size : 0.8em; color : #00f;}
+#menu li a {color : #f00; /* ie6 get span background back */}
+#menu li span  {position : absolute; z-index :1}
+
+#menu li.kdo-jsme     a span {background : url('../images/menu-kdo.png') 0 0 no-repeat;}
+#menu li.galerie      a span {background : url('../images/menu-galerie.png') 0 0 no-repeat;}
+#menu li.srazy        a span {background : url('../images/menu-srazy.png') 0 0 no-repeat;}
+#menu li.gb           a span {background : url('../images/menu-gb.png') 0 0 no-repeat;}
+#menu li.video        a span {background : url('../images/menu-video.png') 0 0 no-repeat;}
+#menu li.kontakt      a span {background : url('../images/menu-kontakt.png') 0 0 no-repeat;}
+
+#menu li.kdo-jsme     a:hover span {background-position : 0 -39px;}
+#menu li.galerie      a:hover span {background-position : 0 -18px;}
+#menu li.srazy        a:hover span {background-position : 0 -19px;}
+#menu li.gb           a:hover span {background-position : 0 -38px;}
+#menu li.video        a:hover span {background-position : 0 -17px;}
+#menu li.kontakt      a:hover span {background-position : 0 -19px;}
+
+.lang-en #menu li.kdo-jsme     {width : 49px; height : 32px; top : 150px; left : 146px;}
+.lang-en #menu li.galerie      {width : 55px; height : 14px; top : 202px; left : 35px;}
+.lang-en #menu li.srazy        {width : 41px; height : 33px; top : 250px; left : 143px;}
+.lang-en #menu li.kontakt      {width : 65px; height : 14px; top : 482px; left : 123px;}
+
+.lang-en #menu li.kdo-jsme     a span {background : url('../images/menu-kdo-en.png') 0 0 no-repeat;}
+.lang-en #menu li.galerie      a span {background : url('../images/menu-galerie-en.png') 0 0 no-repeat;}
+.lang-en #menu li.srazy        a span {background : url('../images/menu-srazy-en.png') 0 0 no-repeat;}
+.lang-en #menu li.kontakt      a span {background : url('../images/menu-kontakt-en.png') 0 0 no-repeat;}
+
+.lang-en #menu li.kdo-jsme     a:hover span {background-position : 0 -32px;}
+.lang-en #menu li.galerie      a:hover span {background-position : 0 -14px;}
+.lang-en #menu li.srazy        a:hover span {background-position : 0 -33px;}
+.lang-en #menu li.kontakt      a:hover span {background-position : 0 -14px;}
+/* }}} */
+
+/* {{{ CONTENT */
+#content {
+    width : 420px;
+    _width : 560px;
+    padding : 0px 40px 0 100px;
+    background : url('../images/bg-content.gif') 0 22px repeat-y;
+    float : right;
+    padding-top : 50px;
+}
+#content .inner {
+    background : url('../images/bg-inner.gif') right bottom no-repeat;
+}
+#content.kontakt .inner {
+    background : url('../images/bg-kontakt.gif') center 70% no-repeat;
+    padding-bottom : 50px;
+}
+#content.srazy .inner,
+#content.kdo-jsme .inner {background-image : none;}
+
+#content h2 {margin : 0  0 20px 80px; text-transform : uppercase; color : #D90623; font-size : 3em;}
+#content h2.vyber-ze-srazu {margin-left : 0px;}
+#content h2.selection-from-meetings {margin-left : 0px; font-size : 2.5em;}
+/* #content.kdo-jsme h2 {width : 207px; height : 46px;}
+#content.kontakt h2 {width : 159px; height : 46px;}
+#content.srazy h2 {width : 107px; height : 47px;}
+
+#content h2 span {display : block; width : 100%; height : 100%; position : absolute; z-index : 1; font-size : 1.2em;}
+#content.kdo-jsme h2 span {background : url('../images/head-kdo-cz.gif') 0 0 no-repeat;}
+#content.srazy h2 span {background : url('../images/head-srazy-cz.gif') 0 0 no-repeat;}
+#content.kontakt h2 span {background : url('../images/head-kontakt-cz.gif') 0 0 no-repeat;} */
+
+#content p.mail {margin : 185px 0 115px;font-weight : 800; font-size : 1.2em; text-align : center;}
+#content p.mail a {display : block; font-size : 1.2em;}
+
+#content .vzkaz {}
+
+#content .aktualita {overflow : hidden; margin-bottom : 30px;}
+#content.aktuality .posledni {margin-bottom : 0px;}
+#content .aktualita h3 {margin-top : 0px;}
+
+#content .pager {text-align : center;}
+#content .pager a {padding : 0px 5px;}
+#content .pager span {background-color : #621F1D; color : #fff; padding : 2px 5px;}
+
+#content.srazy .letak {
+    float : left;
+    margin : 0 10px 10px 0;
+}
+
+.photo {
+    position : relative;
+    z-index : 1;
+    width : 118px;
+    height : 82px;
+    _width : 126px;
+    _height : 90px;
+    display : block;
+    padding-top : 8px;
+    padding-left : 8px;
+    float : left;
+    margin-right : 20px;
+    margin-bottom : 20px;
+}
+.photo .border {position : absolute; z-index : 1; width : 100%; height : 100%; background : url('../images/ramecek.png') 0 0 no-repeat; left : 0; top : 0;}
+.last {margin-right : 0px;}
+
+label {width : 60px; display : block; float : left;}
+input.text {width : 140px; display : block;}
+textarea {display : block; width : 300px; height : 100px;}
+
+#content.galerie label {width : 140px;}
+#content.galerie input.text {width : 250px;}
+#content.galerie ul {padding-left : 20px}
+#content.galerie a.galerieDetail img {
+    border:2px solid #000000;
+    display:block;
+    float:left;
+    margin:0 10px 10px 0;
+}
+
+#content-bottom {width : 526px; height : 73px; float : right; background : url('../images/bg-content-bottom.gif') 0 0 no-repeat; margin-right : 17px;}
+
+/* }}} */
