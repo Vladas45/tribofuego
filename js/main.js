@@ -49,7 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Temp div pro měření klonů
         const tempDiv = document.createElement('div');
         tempDiv.style.position = 'absolute';
-
+        tempDiv.style.visibility = 'hidden';
+// Avoid zero or tiny width
+        tempDiv.style.width = Math.max(contentContainer.clientWidth, 300) + 'px';
+        tempDiv.style.top = '0';
+        tempDiv.style.left = '0';
         document.body.appendChild(tempDiv);
 
 
