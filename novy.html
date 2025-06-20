@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="flex justify-center items-center min-h-screen overflow-x-hidden bg-[url('images/bg-site.gif')]">
+
+<div class="w-full max-w-md "> <!-- Outer wrapper adds padding around the card -->
+
+    <!-- Outer container with flex to place menu and card side by side -->
+    <div class="flex justify-center gap-[25px]">
+
+        <!-- Desktop Menu -->
+        <nav class="absolute mr-[750px] top-[37px] w-[225px] h-[555px] bg-[url('images/menu.gif')] bg-no-repeat hidden md:block z-[89]">
+
+            <ul id="desktop-menu" class="list-none relative w-full h-full">
+                <li class="absolute w-[49px] h-[39px] top-[144px] left-[146px]">
+                    <a href="/kdo-jsme"
+                       class="block w-full h-full hover:bg-[url('images/menu-kdo.png')] bg-[url('images/menu-kdo.png')] bg-no-repeat hover:bg-[position:0_-39px]">
+                        <span class="sr-only">kdo jsme</span>
+                    </a>
+                </li>
+                <li class="absolute w-[57px] h-[18px] top-[199px] left-[34px]">
+                    <a href="/galerie"
+                       class="block w-full h-full hover:bg-[url('images/menu-galerie.png')] bg-[url('images/menu-galerie.png')] bg-no-repeat hover:bg-[position:0_-18px]">
+                        <span class="sr-only">galerie</span>
+                    </a>
+                </li>
+                <li class="absolute w-[55px] h-[19px] top-[256px] left-[135px]">
+                    <a href="/srazy"
+                       class="block w-full h-full hover:bg-[url('images/menu-srazy.png')] bg-[url('images/menu-srazy.png')] bg-no-repeat hover:bg-[position:0_-19px]">
+                        <span class="sr-only">srazy</span>
+                    </a>
+                </li>
+                <li class="absolute w-[56px] h-[38px] top-[300px] left-[39px]">
+                    <a href="/guestbook"
+                       class="block w-full h-full hover:bg-[url('images/menu-gb.png')] bg-[url('images/menu-gb.png')] bg-no-repeat hover:bg-[position:0_-38px]">
+                        <span class="sr-only">guest book</span>
+                    </a>
+                </li>
+                <li class="absolute w-[47px] h-[17px] top-[372px] left-[148px]">
+                    <a href="/video"
+                       class="block w-full h-full hover:bg-[url('images/menu-video.png')] bg-[url('images/menu-video.png')] bg-no-repeat hover:bg-[position:0_-17px]">
+                        <span class="sr-only">video</span>
+                    </a>
+                </li>
+                <li class="absolute w-[63px] h-[19px] top-[481px] left-[123px]">
+                    <a href="/kontakt"
+                       class="block w-full h-full hover:bg-[url('images/menu-kontakt.png')] bg-[url('images/menu-kontakt.png')] bg-no-repeat hover:bg-[position:0_-19px]">
+                        <span class="sr-only">kontakt</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Card wrapper -->
+        <div class="w-[560px]">
+
+            <!-- Middle (repeat-y only) -->
+            <div class="bg-[url('images/bg-content.gif')] bg-repeat-y bg-[length:100%_auto] px-14 py-12 text-gray-600">
+                <h2 class="text-2xl font-semibold mb-4">Centered Card</h2>
+                <p>
+                    This is a simple, centered card using Tailwind CSS. Pellentesque habitant morbi tristique senectus
+                    et netus
+                    et malesuada fames ac turpis egestas. Vestibulum tortor quam...
+                    This is a simple, centered card using Tailwind CSS. Pellentesque habitant morbi tristique senectus
+                    et netus
+                    et malesuada fames ac turpis egestas. Vestibulum tortor quam...
+                    This is a simple, centered card using Tailwind CSS. Pellentesque habitant morbi tristique senectus
+                    et netus
+                </p>
+            </div>
+
+            <!-- Bottom -->
+            <div class="w-[528px] h-[73px] ml-[20px] bg-[url('images/bg-content-bottom.gif')] bg-no-repeat"></div>
+        </div>
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
