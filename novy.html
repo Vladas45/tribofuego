@@ -3,66 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tribo Fuego - Pražská fireshow skupina"/>
+    <meta name="keywords" content="TriboFuego, fireshow, oheň, žonglování, srazy"/>
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cufon/1.09i/cufon-yui.js"></script>
+    <script src="js/TriboFuego_700.font.js"></script>
+    <script type="text/javascript">
+        Cufon.replace('h2');
+    </script>
 </head>
-<body class="flex justify-center items-center min-h-screen overflow-x-hidden bg-[url('images/bg-site.gif')]">
+<body class="flex justify-center items-center overflow-x-hidden bg-[url('images/bg-site.gif')]">
 
 <div class="w-full max-w-md "> <!-- Outer wrapper adds padding around the card -->
 
     <!-- Outer container with flex to place menu and card side by side -->
     <div class="flex justify-center gap-[25px]">
 
-        <!-- Desktop Menu -->
-        <nav class="absolute mr-[750px] top-[37px] w-[225px] h-[555px] bg-[url('images/menu.gif')] bg-no-repeat hidden md:block z-[89]">
+        <!-- Class with menu ane header -->
+        <div class="flex w-full">
 
-            <ul id="desktop-menu" class="list-none relative w-full h-full">
-                <li class="absolute w-[49px] h-[39px] top-[144px] left-[146px]">
-                    <a href="/kdo-jsme"
-                       class="block w-full h-full hover:bg-[url('images/menu-kdo.png')] bg-[url('images/menu-kdo.png')] bg-no-repeat hover:bg-[position:0_-39px]">
-                        <span class="sr-only">kdo jsme</span>
+            <!-- Header -->
+            <div class="absolute top-[40px] ml-[130px] md:ml-[230px] w-[450px] h-[190px] bg-[url('images/logo.gif')] bg-no-repeat z-[88]">
+                <h1 id="logo" class="relative w-[346px] h-[70px] mt-[43px] ml-[36px]">
+                    <a href="/" class="block w-full h-full">
+                        <span class="absolute inset-0 z-[1] bg-[url('images/logo2.gif')] bg-no-repeat block"></span>
+                        Tribo Fuego - fireshow skupina
                     </a>
-                </li>
-                <li class="absolute w-[57px] h-[18px] top-[199px] left-[34px]">
-                    <a href="/galerie"
-                       class="block w-full h-full hover:bg-[url('images/menu-galerie.png')] bg-[url('images/menu-galerie.png')] bg-no-repeat hover:bg-[position:0_-18px]">
-                        <span class="sr-only">galerie</span>
-                    </a>
-                </li>
-                <li class="absolute w-[55px] h-[19px] top-[256px] left-[135px]">
-                    <a href="/srazy"
-                       class="block w-full h-full hover:bg-[url('images/menu-srazy.png')] bg-[url('images/menu-srazy.png')] bg-no-repeat hover:bg-[position:0_-19px]">
-                        <span class="sr-only">srazy</span>
-                    </a>
-                </li>
-                <li class="absolute w-[56px] h-[38px] top-[300px] left-[39px]">
-                    <a href="/guestbook"
-                       class="block w-full h-full hover:bg-[url('images/menu-gb.png')] bg-[url('images/menu-gb.png')] bg-no-repeat hover:bg-[position:0_-38px]">
-                        <span class="sr-only">guest book</span>
-                    </a>
-                </li>
-                <li class="absolute w-[47px] h-[17px] top-[372px] left-[148px]">
-                    <a href="/video"
-                       class="block w-full h-full hover:bg-[url('images/menu-video.png')] bg-[url('images/menu-video.png')] bg-no-repeat hover:bg-[position:0_-17px]">
-                        <span class="sr-only">video</span>
-                    </a>
-                </li>
-                <li class="absolute w-[63px] h-[19px] top-[481px] left-[123px]">
-                    <a href="/kontakt"
-                       class="block w-full h-full hover:bg-[url('images/menu-kontakt.png')] bg-[url('images/menu-kontakt.png')] bg-no-repeat hover:bg-[position:0_-19px]">
-                        <span class="sr-only">kontakt</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+                </h1>
+                <p id="language" class="ml-5 pt-[15px] mt-8 font-bold">
+                    <span class="sr-only">Choose language:</span>
+                    CZ / <a href="/galleries" class="text-fireRed hover:underline">EN</a>
+                </p>
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="absolute top-[37px] w-[230px] h-[555px] bg-[url('images/menu.gif')] bg-no-repeat hidden md:block z-[89]">
+
+                <ul id="desktop-menu" class="list-none relative w-full h-full">
+                    <li class="absolute w-[49px] h-[39px] top-[144px] left-[146px]">
+                        <a href="/kdo-jsme"
+                           class="block w-full h-full hover:bg-[url('images/menu-kdo.png')] bg-[url('images/menu-kdo.png')] bg-no-repeat hover:bg-[position:0_-39px]">
+                            <span class="sr-only">kdo jsme</span>
+                        </a>
+                    </li>
+                    <li class="absolute w-[57px] h-[18px] top-[199px] left-[34px]">
+                        <a href="/galerie"
+                           class="block w-full h-full hover:bg-[url('images/menu-galerie.png')] bg-[url('images/menu-galerie.png')] bg-no-repeat hover:bg-[position:0_-18px]">
+                            <span class="sr-only">galerie</span>
+                        </a>
+                    </li>
+                    <li class="absolute w-[55px] h-[19px] top-[256px] left-[135px]">
+                        <a href="/srazy"
+                           class="block w-full h-full hover:bg-[url('images/menu-srazy.png')] bg-[url('images/menu-srazy.png')] bg-no-repeat hover:bg-[position:0_-19px]">
+                            <span class="sr-only">srazy</span>
+                        </a>
+                    </li>
+                    <li class="absolute w-[56px] h-[38px] top-[300px] left-[39px]">
+                        <a href="/guestbook"
+                           class="block w-full h-full hover:bg-[url('images/menu-gb.png')] bg-[url('images/menu-gb.png')] bg-no-repeat hover:bg-[position:0_-38px]">
+                            <span class="sr-only">guest book</span>
+                        </a>
+                    </li>
+                    <li class="absolute w-[47px] h-[17px] top-[372px] left-[148px]">
+                        <a href="/video"
+                           class="block w-full h-full hover:bg-[url('images/menu-video.png')] bg-[url('images/menu-video.png')] bg-no-repeat hover:bg-[position:0_-17px]">
+                            <span class="sr-only">video</span>
+                        </a>
+                    </li>
+                    <li class="absolute w-[63px] h-[19px] top-[481px] left-[123px]">
+                        <a href="/kontakt"
+                           class="block w-full h-full hover:bg-[url('images/menu-kontakt.png')] bg-[url('images/menu-kontakt.png')] bg-no-repeat hover:bg-[position:0_-19px]">
+                            <span class="sr-only">kontakt</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
 
         <!-- Card wrapper -->
-        <div class="w-[560px]">
+        <div class="w-[560px] ml-[0px] md:ml-[100px] mb-[50px] mx-auto">
 
             <!-- Middle (repeat-y only) -->
-            <div class="w-[560px] bg-[url('images/bg-content.gif')] bg-repeat-y bg-[length:100%_auto] px-14 py-12 text-gray-600">
-                <h2 class="text-2xl font-semibold mb-4">Centered Card</h2>
-                <p>
+            <div class="w-[560px] bg-[url('images/bg-content.gif')] bg-repeat-y bg-[length:100%_auto] pl-[8rem] md:pl-[10rem]
+             pr-[4rem] md:pr-[7rem] block md:block mt-[10rem] pt-[5rem] pb-[2rem] text-gray-600">
+
+                <h2 class="mb-5 uppercase text-[#D90623] text-4xl">KDO JSME</h2>
+                <p class="w-full">
                     This is a simple, centered card using Tailwind CSS. Pellentesque habitant morbi tristique senectus
                     et netus
                     et malesuada fames ac turpis egestas. Vestibulum tortor quam...

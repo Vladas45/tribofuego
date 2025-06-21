@@ -1,100 +1,583 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="cs" xml:lang="cs">
+<!DOCTYPE html>
+<html lang="cs">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta charset="UTF-8"/>
     <title>Tribo Fuego - fireshow skupina</title>
-    <meta name="keywords"
-          content="TriboFuego. tribo. fuego. fireshow. oheň. fire. žonglování. juggling. srazy. meetings"/>
     <meta name="description" content="Tribo Fuego - Pražská fireshow skupina"/>
-    <link rel="stylesheet" media="screen" type="text/css" href="css/style.css"/>
-    <link rel="stylesheet" media="screen" type="text/css" href="css/tiny.css"/>
-    <script src="js/cufon-yui.js" type="text/javascript"></script>
-    <script src="js/TriboFuego_700.font.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        Cufon.replace('h2');
-    </script>
+    <meta name="keywords" content="TriboFuego, fireshow, oheň, žonglování, srazy"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"/>
+    <script src="js/main.js"></script>
 
+    <!-- Tailwind CDN musí být načten před konfigurací -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fireRed: '#D90623',
+                        darkRed: '#621F1D',
+                        mediumRed: '#9D191F',
+                    },
+                }
+            }
+        }
+    </script>
 </head>
 
-<body>
-<div id="page-holder" class="lang-cs">
+<body class="overflow-x-hidden bg-[url('images/bg-site.gif')] text-sm font-[Tahoma] text-black mb-10 text-left">
 
-    <div id="header">
-        <h1 id="logo"><a href="/"><span></span>Tribo Fuego - fireshow skupina</a></h1>
-        <a class="hide" href="#menu">přeskočit na menu</a>
-        <p id="language"><span class="hide">Choose language: </span> CZ / <a href="/about-us">EN</a></p>
-    </div>
+<!-- Začátek stránky -->
+<div id="page-holder" class="w-full max-w-[700px] mx-auto items-center flex">
 
-    <div id="content" class="kdo-jsme">
-        <div class="inner">
+    <!-- Desktop Menu -->
+    <nav class="absolute ml-[41px] top-[37px] w-[225px] h-[555px] bg-no-repeat hidden md:block z-[89]">
 
-            <h2>Kdo jsme</h2>
-            <h3>Oheň</h3>
-            <p>Oheň nen&iacute; věc, n&yacute;brž bytost&iacute;. Ne v&scaron;ak bytost&iacute; neviditelnou, duchovn&iacute;:
-                oheň lze vn&iacute;mat tělesn&yacute;mi smysly, přestože nem&aacute; tělo! Oheň roste, utv&aacute;ř&iacute;
-                se, vyv&iacute;j&iacute; se a množ&iacute;. Při tom v&scaron;em oheň pečuje o svůj tvar a vzhled &ndash;
-                je procesem neust&aacute;l&eacute; sebeproměny. Rovněž př&iacute;j&iacute;m&aacute; potravu &ndash; je
-                třeba jej krmit a živit: hladov&iacute;-li, skom&iacute;r&aacute; podobně jako tělesn&eacute; bytosti. A
-                podobně jako ony vyžaduje oheň vzduch, při jehož nedostatku se dus&iacute;. Obdob&iacute; nouze v&scaron;ak
-                houževnatě přež&iacute;v&aacute; lze jej znovu oživit z doutnaj&iacute;c&iacute;ch oharků či rozdm&yacute;chat
-                z jiskřiček, jako jin&eacute; bytosti ze z&aacute;rodků, semen a hl&iacute;z.</p>
-            <p>Nerod&iacute; se ov&scaron;em z přirozen&yacute;ch rodičů &ndash; tvoř&iacute; se z&aacute;zračně: z nebe
-                s &uacute;derem blesku, l&aacute;vou chrlen z hlubin, i n&aacute;razem kamene lze nechat povstat jeho
-                jiskrn&yacute;m sem&eacute;nkům z chladn&eacute;ho srdce bezcitn&eacute; hmoty.</p>
-            <p>I když oheň je možn&eacute; vytvořit či přivolat, jeho původ se přirozen&yacute;m n&aacute;sledkům a př&iacute;čin
-                vymyk&aacute;: jedin&aacute; jiskřička může způsobit pož&aacute;r, jehož dopad nezn&aacute; mez&iacute;.
-                Zmohutn&iacute;-li, st&aacute;v&aacute; se nezkrotn&yacute;m a nic neodol&aacute; jeho běsněn&iacute;:
-                pak se teprve uk&aacute;že, nakolik je projevem čist&eacute;, nič&iacute;m nev&aacute;zan&eacute;
-                moci.</p>
-            <p>Proto je byt&iacute; ohně posv&aacute;tn&eacute;, numiozn&iacute;, božsk&eacute;. Je stejn&eacute; jako
-                byt&iacute; skutečnosti, kterou nemůžeme nikdy spoutat, neboť jsme jej&iacute; souč&aacute;st&iacute;.
-                Nelze ji spatřit, natož pochopit. Zasvěcen&iacute; spoč&iacute;v&aacute; v proměně osobn&iacute; zku&scaron;enosti
-                sebe sama a skutečnosti země v rytmu a ohňov&eacute; povaze světa.</p>
-            <h3>Tribo Fuego &ndash; "Kmen Ohně"</h3>
-            <p>vzniklo kolem roku 2002 seskupen&iacute;m lid&iacute;, kteř&iacute; si na&scaron;li z&aacute;libu v
-                žonglov&aacute;n&iacute; s ohněm. Sch&aacute;zeli se v sam&eacute;m srdci Prahy na Star&eacute;m městě
-                nebo v pražsk&yacute;ch uličk&aacute;ch a parc&iacute;ch. Tyto ohňov&eacute; d&yacute;ch&aacute;nky
-                vyvrcholili <a href="http://www.20031205.wz.cz/">premi&eacute;rou Tribo Fuego</a> na Sv. Mikul&aacute;&scaron;e
-                5. 12 2003.</p>
-            <p>Během roku 2004, Tribo Fuego pokračovalo ve v&yacute;voji a sv&eacute; ohniv&eacute; v&iacute;ry začalo
-                předv&aacute;dět i na dal&scaron;&iacute;ch kulturn&iacute;ch projektech, kde se vyskytuje dodnes.</p>
-            <p>Tribo Fuego se neust&aacute;le snaž&iacute; naplňovat my&scaron;lenku fire-perfomance se v&scaron;&iacute;m
-                co k tomu patř&iacute;. Každ&eacute; vystupovn&aacute;n&iacute; je jedinečn&eacute;, koncept je vět&scaron;inou
-                utv&aacute;řen podle charakteru akce, na kter&yacute;ch jsou Tribo Fuego čestn&yacute;mi &uacute;činkuj&iacute;c&iacute;mi.
-                Interpretem se může st&aacute;t každ&yacute;, koho fascinuj&iacute; ohniv&eacute; v&iacute;ry a dok&aacute;že
-                je sv&yacute;mi pohyby usměrnit, každ&yacute;, kdo m&aacute; chuť se připojit, tvořit a rozv&iacute;jet
-                v jak&eacute;mkoliv ohnivě kreativn&iacute;m duchu.</p>
-            <p>Když je venku pěkně, svol&aacute;v&aacute; Tribo Fuego každou druhou středu ohniv&eacute; srazy, kam může
-                přij&iacute;t kdokoliv, koho zaj&iacute;m&aacute; žonglov&aacute;n&iacute; a oheň, i jako div&aacute;k
-                nebo s hudebn&iacute;m n&aacute;strojem - k ohniv&yacute;m radov&aacute;nk&aacute;m totiž dozajista patř&iacute;
-                i rytmus a tak se na těchto srazech stali nepostradatelnou souč&aacute;st&iacute; předev&scaron;&iacute;m
-                buben&iacute;ci.</p>
-            <p>Když n&aacute;st&aacute;v&aacute; podzim a chladn&eacute; počas&iacute;, ukl&aacute;d&aacute; se Tribo
-                Fuego k zimn&iacute;mu sp&aacute;nku a ohniv&eacute; srazy se na p&aacute;r měs&iacute;ců přeru&scaron;&iacute;,
-                av&scaron;ak na Sv. Mikul&aacute;&scaron;e vyr&aacute;ž&iacute; do ulic oslavit narozeniny.</p>
-            <p>Tribo Fuego nen&iacute; jen okruh lid&iacute;, nejsou to pouze ohniv&eacute; srazy. Tribo Fuego je my&scaron;lenka,
-                stalo se ritu&aacute;lem. My věř&iacute;me, že se tato my&scaron;lenka bude rozv&iacute;jet i v dal&scaron;&iacute;ch
-                srd&iacute;ch ve kter&yacute;ch prask&aacute; oheň a l&aacute;ska.</p>
-            <p>
-                <img src="gallery/kdo_jsme.jpg" alt="tribo fuego" height="274" title=""/>
+        <ul id="desktop-menu" class="list-none relative w-full h-full bg-[url('images/menu.gif')]">
+            <li class="absolute w-[49px] h-[39px] top-[144px] left-[146px]">
+                <a href="/kdo-jsme"
+                   class="block w-full h-full hover:bg-[url('images/menu-kdo.png')] bg-[url('images/menu-kdo.png')] bg-no-repeat hover:bg-[position:0_-39px]">
+                    <span class="sr-only">kdo jsme</span>
+                </a>
+            </li>
+            <li class="absolute w-[57px] h-[18px] top-[199px] left-[34px]">
+                <a href="/galerie"
+                   class="block w-full h-full hover:bg-[url('images/menu-galerie.png')] bg-[url('images/menu-galerie.png')] bg-no-repeat hover:bg-[position:0_-18px]">
+                    <span class="sr-only">galerie</span>
+                </a>
+            </li>
+            <li class="absolute w-[55px] h-[19px] top-[256px] left-[135px]">
+                <a href="/srazy"
+                   class="block w-full h-full hover:bg-[url('images/menu-srazy.png')] bg-[url('images/menu-srazy.png')] bg-no-repeat hover:bg-[position:0_-19px]">
+                    <span class="sr-only">srazy</span>
+                </a>
+            </li>
+            <li class="absolute w-[56px] h-[38px] top-[300px] left-[39px]">
+                <a href="/guestbook"
+                   class="block w-full h-full hover:bg-[url('images/menu-gb.png')] bg-[url('images/menu-gb.png')] bg-no-repeat hover:bg-[position:0_-38px]">
+                    <span class="sr-only">guest book</span>
+                </a>
+            </li>
+            <li class="absolute w-[47px] h-[17px] top-[372px] left-[148px]">
+                <a href="/video"
+                   class="block w-full h-full hover:bg-[url('images/menu-video.png')] bg-[url('images/menu-video.png')] bg-no-repeat hover:bg-[position:0_-17px]">
+                    <span class="sr-only">video</span>
+                </a>
+            </li>
+            <li class="absolute w-[63px] h-[19px] top-[481px] left-[123px]">
+                <a href="/kontakt"
+                   class="block w-full h-full hover:bg-[url('images/menu-kontakt.png')] bg-[url('images/menu-kontakt.png')] bg-no-repeat hover:bg-[position:0_-19px]">
+                    <span class="sr-only">kontakt</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Right side (Header + Content) -->
+    <div class="relative w-full max-w-[560px] md:ml-[175px] mx-auto px-4">
+
+        <!-- Hamburger tlačítko – zobrazí se pod 768 px -->
+        <button id="hamburger" class="absolute w-[50px] h-[110px] left-[64px] z-[100] top-[69px] group rounded-lg
+    bg-white text-fireRed block md:hidden shadow-[8px_6px_10px_0_theme(colors.fireRed)]">
+
+            <div class="grid justify-items-center gap-1.5">
+                <span class="h-1 w-8 rounded-full bg-fireRed transition group-hover:rotate-45 group-hover:translate-y-2.5"></span>
+                <span class="h-1 w-8 rounded-full bg-fireRed group-hover:scale-x-0 transition"></span>
+                <span class="h-1 w-8 rounded-full bg-fireRed group-hover:-rotate-45 group-hover:-translate-y-2.5"></span>
+            </div>
+        </button>
+
+        <!-- Header -->
+        <header id="header"
+                class="absolute top-[30px] ml-[75px] w-[465px] h-[190px] pt-[10px] bg-[url('images/logo.gif')] bg-no-repeat bg-[0px_10px] z-[88]">
+            <h1 id="logo" class="relative w-[346px] h-[70px] mt-[43px] ml-[36px]">
+                <a href="/" class="block w-full h-full">
+                    <span class="absolute inset-0 z-[1] bg-[url('images/logo2.gif')] bg-no-repeat block"></span>
+                    Tribo Fuego - fireshow skupina
+                </a>
+            </h1>
+            <p id="language" class="ml-5 pt-[15px] mt-8 font-bold">
+                <span class="sr-only">Choose language:</span>
+                CZ / <a href="/galleries" class="text-fireRed hover:underline">EN</a>
             </p>
+        </header>
+
+        <!-- Fullscreen menu overlay -->
+        <div id="fullscreen-menu"
+             class="fixed inset-0 bg-white hidden opacity-0 scale-95 transition-all duration-500 ease-in-out z-[150] flex flex-col items-center justify-center p-8">
+
+            <!-- Zavírací křížek vpravo nahoře -->
+            <button id="close-menu"
+                    class="absolute top-5 right-5 text-3xl font-bold hover:text-fireRed"
+                    aria-label="Close menu">&times;
+            </button>
+
+            <!-- Mobilní menu (obsah) -->
+            <nav class="space-y-6 text-center">
+                <a href="/kdo-jsme" class="block text-fireRed text-xl font-bold hover:underline ">Kdo jsme</a>
+                <a href="/galerie" class="block text-fireRed text-xl font-bold hover:underline">Galerie</a>
+                <a href="/srazy" class="block text-fireRed text-xl font-bold hover:underline">Srazy</a>
+                <a href="/guestbook" class="block text-fireRed text-xl font-bold hover:underline">Guestbook</a>
+                <a href="/video" class="block text-fireRed text-xl font-bold hover:underline">Video</a>
+                <a href="/kontakt" class="block text-fireRed text-xl font-bold hover:underline">Kontakt</a>
+            </nav>
         </div>
+
+        <!-- Content -->
+        <main id="content"
+              class="relative ml-[25px] w-[560px] pt-[25px] bg-[0px_22px] bg-transparent mt-[150px] z-[20] mx-auto flex items-center justify-center">
+
+            <div class="absolute inset-x-0 -top-[0px] w-[450px] mx-auto h-[73px] bg-[url('images/bg-content-bottom.gif')] bg-no-repeat z-10"></div>
+
+            <!-- Bottom border image -->
+            <div class="absolute inset-x-0 -bottom-[65px] ml-[17px] w-[510px] mx-auto h-[73px] bg-[url('images/bg-content-bottom.gif')] bg-no-repeat z-10"></div>
+
+            <!-- Left border image -->
+            <div class="absolute inset-y-0 left-0 w-[70px] bg-[url('images/bg-content.gif')] bg-repeat-y"></div>
+
+            <!-- Right border image -->
+            <div class="absolute inset-y-0 right-[20px] w-[70px] bg-[url('images/bg-content.gif')] bg-repeat-y z-[35]"
+                 style="transform: scaleX(-1);"></div>
+
+            <!-- The content-container will hold the paginated content -->
+            <div id="content-container" class="relative z-10 max-w-[420px] w-full pt-16 mx-auto bg-white h-full px-6">
+
+                <!-- SEKCE KDO JSME -->
+                <section id="kdo-jsme" class="container mx-auto px-6 max-w-4xl content-section">
+                    <h2 class="text-4xl font-extrabold text-red-600 tracking-wide text-center mb-12">
+                        Kdo jsme
+                    </h2>
+
+                    <div class="mb-12">
+                        <h3 class="text-3xl font-semibold text-red-600 mb-6 border-b-2 border-red-600 pb-2">
+                            Oheň
+                        </h3>
+                        <p class="mb-6 text-lg text-gray-800 leading-relaxed">
+                            Oheň není věc, nýbrž bytostí. Ne však bytostí neviditelnou, duchovní: oheň lze vnímat
+                            tělesnými smysly, přestože nemá tělo! Oheň roste, utváří se, vyvíjí se a množí. Při tom všem
+                            oheň pečuje o svůj tvar a vzhled – je procesem neustálé sebeproměny.
+                        </p>
+                        <p class="mb-6 text-lg text-gray-800 leading-relaxed">
+                            Nerodí se ovšem z přirozených rodičů – tvoří se zázračně: z nebe s úderem blesku, lávou
+                            chrlen z hlubin, i nárazem kamene lze nechat povstat jeho jiskrným seménkům z chladného
+                            srdce bezcitné hmoty.
+                        </p>
+                        <p class="mb-6 text-lg text-gray-800 leading-relaxed">
+                            I když oheň je možné vytvořit či přivolat, jeho původ se přirozeným následkům a příčin
+                            vymyká: jediná jiskřička může způsobit požár, jehož dopad nezná mezí. Zmohutní-li, stává se
+                            nezkrotným a nic neodolá jeho běsnění.
+                        </p>
+                        <p class="mb-6 text-lg text-gray-800 leading-relaxed">
+                            Proto je bytí ohně posvátné, numiózní, božské. Je stejné jako bytí skutečnosti, kterou
+                            nemůžeme nikdy spoutat, neboť jsme její součástí.
+                        </p>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-3xl font-semibold text-red-600 mb-6 border-b-2 border-red-600 pb-2">
+                            Tribo Fuego <br> <span class="block mt-2">"Kmen Ohně"</span>
+                        </h3>
+                        <p class="mb-6 text-lg text-gray-800 leading-relaxed">
+                            Vzniklo kolem roku 2002 seskupením lidí, kteří si našli zálibu v žonglování s ohněm.
+                            Scházeli se v srdci Prahy a vyvrcholili <a href="#"
+                                                                       class="text-red-600 hover:text-red-400 underline">premiérou
+                            Tribo Fuego</a> na Sv. Mikuláše 5. 12. 2003.
+                        </p>
+                        <p class="mb-6 text-lg text-gray-800 leading-relaxed">
+                            Během roku 2004 Tribo Fuego pokračovalo ve vývoji a své ohnivé víry začalo předvádět i na
+                            dalších kulturních projektech.
+                        </p>
+                        <p class="mb-6 text-lg text-gray-800 leading-relaxed">
+                            Tribo Fuego se neustále snaží naplňovat myšlenku fire-performance. Každé vystoupení je
+                            jedinečné a koncept je utvářen podle charakteru akce.
+                        </p>
+                        <p class="mb-6 text-lg text-gray-800 leading-relaxed">
+                            Když je venku pěkně, svolává Tribo Fuego každou druhou středu ohnivé srazy, kde může přijít
+                            kdokoliv, koho zajímá žonglování a oheň, včetně hudebníků.
+                        </p>
+                        <p class="mb-6 text-lg text-gray-800 leading-relaxed">
+                            Na podzim se srazy přerušují, ale na Sv. Mikuláše vyráží do ulic oslavit narozeniny.
+                        </p>
+                        <p class="mb-6 text-lg text-gray-800 leading-relaxed">
+                            Tribo Fuego není jen skupina lidí, je to myšlenka a rituál, který věříme, že se bude
+                            rozvíjet v dalších srdcích.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <img src="gallery/kdo_jsme.jpg" alt="tribo fuego" class="mx-auto max-w-full h-auto"/>
+                    </div>
+                </section>
+
+                <!-- SEKCE GALERIE -->
+                <section id="galerie" class="content-section">
+
+                    <!-- Hlavní nadpis -->
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-fireRed tracking-wide text-center mb-10 mt-10">
+                        Galerie
+                    </h2>
+
+                    <!-- Podnadpisy -->
+                    <h3 class="text-xl font-semibold text-fireRed mt-8 mb-3 text-center">
+                        <a href="/galerie/galerie-letaku" class="hover:underline transition">Galerie letáků</a>
+                    </h3>
+
+                    <h3 class="text-xl font-semibold text-fireRed mt-6 mb-3 text-center">
+                        <a href="/galerie/vyber-ze-srazu" class="hover:underline transition">Výběr fotek ze srazů</a>
+                    </h3>
+
+                    <h3 class="text-lg font-medium text-fireRed mt-6 mb-6 text-center">
+                        Přidejte nám odkaz na vaše fotky ze srazu!
+                    </h3>
+
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-1">
+                                Sraz: <span class="text-red-500">*</span>
+                            </label>
+                            <select name="srazyKey"
+                                    class="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-fireRed">
+                                <optgroup label="2025">
+                                    <option value="296">28. 5. - Stromovka</option>
+                                    <option value="295">14. 5. - park "Sacré Coeur"</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-1">
+                                Odkaz na vaši galerii: <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" name="url" value="http://"
+                                   class="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-fireRed">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-1">
+                                Vaše jméno: <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text"
+                                   class="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-fireRed">
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-1">
+                                Váš e-mail nebo odkaz:
+                            </label>
+                            <input type="text" name="kontakt"
+                                   class="w-full px-3 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-fireRed">
+                        </div>
+                    </div>
+
+                    <!-- Skrytý antispam -->
+                    <div id="hide" class="hidden">
+                        <input type="text" name="spam" class="border px-2 py-1 rounded w-full">
+                        <label class="text-sm text-gray-500">
+                            Napište prosím číslicí, kolik je jedna plus jedna <span class="text-red-500">*</span>
+                        </label>
+                    </div>
+
+                    <!-- Odeslání -->
+                    <div class="flex items-center justify-between pt-2">
+                        <small class="text-gray-500">* povinné</small>
+                        <input type="submit" name="submit" value="Odeslat"
+                               class="bg-fireRed hover:bg-red-700 text-white font-semibold px-6 py-2 rounded-lg shadow-md transition-all duration-200 cursor-pointer">
+                    </div>
+
+                    <div class="max-w-3xl mx-auto mt-8 text-fireRed font-sans space-y-10">
+
+
+                        <!-- Karta -->
+                        <div class="cursor-pointer bg-white rounded-xl shadow-lg p-6 flex flex-col gap-4 hover:scale-[1.02] transition-transform duration-300">
+
+                            <!-- Nadpis v horní části karty -->
+                            <h3 class="text-xl font-bold border-b-2 border-fireRed pb-1">
+                                29. 5. 2024 - Branická louka
+                            </h3>
+
+                            <!-- Obsah karty: obrázek + text vedle sebe -->
+                            <div class="flex flex-row gap-6 items-start">
+
+                                <!-- LEVÁ ČÁST: Rámeček + obrázek -->
+                                <div class="relative inline-block overflow-hidden bg-white cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    <img src="images/ramecek.png" alt="" aria-hidden="true"
+                                         class="relative block max-w-full h-auto select-none pointer-events-none z-20"/>
+                                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                        <img src="gallery/branicka_louka.jpg" alt="Louka Na Labuťce"
+                                             class="w-[100%] h-[100%] p-2 object-cover rounded-md"/>
+                                    </div>
+                                </div>
+
+                                <!-- PRAVÁ ČÁST: Odkazy -->
+                                <div class="flex-1 pt-2">
+                                    <ul class="space-y-2 text-sm">
+                                        <li class="flex items-center gap-2">
+                                            <a href="https://www.facebook.com/share/p/QNbLVrxVwWtcuphS/"
+                                               class="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors font-medium">
+                                                <i class="fab fa-facebook fa-lg"></i>
+                                                <span>odkaz</span>
+                                            </a>
+
+                                            <span class="text-gray-500">–</span>
+
+                                            <a href="http://"
+                                               class="text-fireRed font-semibold hover:underline hover:text-red-700 transition-colors">
+                                                Alma Libre
+                                            </a>
+                                        </li>
+
+                                        <li class="flex items-center gap-2">
+                                            <a href="https://www.facebook.com/share/p/QNbLVrxVwWtcuphS/"
+                                               class="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors font-medium">
+                                                <i class="fab fa-facebook fa-lg"></i>
+                                                <span>odkaz</span>
+                                            </a>
+
+                                            <span class="text-gray-500">–</span>
+
+                                            <a href="http://"
+                                               class="text-fireRed font-semibold hover:underline hover:text-red-700 transition-colors">
+                                                Alma Libre
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Karta -->
+                        <div class="cursor-pointer bg-white rounded-xl shadow-lg p-6 flex flex-col gap-4 hover:scale-[1.02] transition-transform duration-300">
+
+                            <!-- Nadpis v horní části karty -->
+                            <h3 class="text-xl font-bold border-b-2 border-fireRed pb-1">
+                                1. 5. 2024 – Louka Na Labuťce
+                            </h3>
+
+                            <!-- Obsah karty: obrázek + text vedle sebe -->
+                            <div class="flex flex-row gap-6 items-start">
+
+                                <!-- LEVÁ ČÁST: Rámeček + obrázek -->
+                                <div class="relative inline-block overflow-hidden bg-white cursor-pointer transition-transform duration-300 hover:scale-105">
+                                    <img src="images/ramecek.png" alt="" aria-hidden="true"
+                                         class="relative block max-w-full h-auto select-none pointer-events-none z-20"/>
+                                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                        <img src="gallery/louka_na_labutence.jpg" alt="Louka Na Labuťce"
+                                             class="w-[100%] h-[100%] p-2 object-cover rounded-md"/>
+                                    </div>
+                                </div>
+
+                                <!-- PRAVÁ ČÁST: Odkazy -->
+                                <div class="flex-1 pt-2">
+                                    <ul class="space-y-2 text-sm">
+                                        <li class="flex items-center gap-2">
+                                            <a href="https://www.facebook.com/permalink.php?story_fbid=..."
+                                               class="flex items-center gap-2 text-blue-600 hover:text-blue-800 transition-colors font-medium">
+                                                <i class="fab fa-facebook fa-lg"></i>
+                                                <span>odkaz</span>
+                                            </a>
+
+                                            <span class="text-gray-500">–</span>
+
+                                            <a href="http://"
+                                               class="text-fireRed font-semibold hover:underline hover:text-red-700 transition-colors">
+                                                Alma Libre
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- SEKCE SRAZY -->
+                <section id="srazy" class="content-section">
+
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-fireRed tracking-wide text-center mb-10 mt-10">
+                        Srazy
+                    </h2>
+
+                    <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-6 space-y-6">
+                        <!-- Leták -->
+                        <div class="flex justify-center">
+                            <a href="#" rel="lightbox"
+                               class="group block w-fit rounded overflow-hidden shadow hover:shadow-xl transition">
+                                <img src="https://www.tribofuego.org/photos/photo-428.jpg" alt="leták"
+                                     class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-300">
+                            </a>
+                        </div>
+
+                        <!-- Úvodní pozvánka -->
+                        <div class="text-gray-800 text-lg leading-relaxed">
+                            <p>
+                                Buďte srdečně zváni <strong>všichni</strong> – žongléři, bubeníci, začátečníci i ti,
+                                kteří se chtějí jen dívat a nechat svou mysl spočinout na klidných ohnivých kruzích.
+                            </p>
+                        </div>
+
+                        <!-- Informace o akci -->
+                        <div class="bg-red-50 border-l-4 border-red-400 p-4 rounded">
+                            <h3 class="text-2xl font-bold text-red-600 mb-1">Setkání na Ostrově Štvanice (HolKa)</h3>
+                            <p class="text-sm text-gray-700 mb-2">
+                                <a href="https://mapy.com/s/bupevunubo" class="text-red-600 hover:underline mr-4">mapy.cz</a>
+                                <a href="https://maps.app.goo.gl/EtuiFwpSz7vxtMY3A"
+                                   class="text-red-600 hover:underline">Google Maps</a>
+                            </p>
+
+                            <p class="text-gray-800 text-base"><strong>Středa 11. 6.</strong></p>
+                            <p class="mt-2 text-gray-700">Ohnivý rej s živými hudebními nástroji. Setkání se konají
+                                každou druhou středu až do října.</p>
+                            <p class="mt-4 text-gray-700">Ohně zapalujeme po setmění, do té doby probíhá volné
+                                trénování.</p>
+                        </div>
+
+                        <!-- Upozornění a autor -->
+                        <div class="text-sm text-gray-600 mt-4 space-y-2">
+                            <p><strong>Prosíme:</strong> dodržujte základní normy dobrého chování. Uklízejte po sobě
+                                odpadky a při případné návštěvě PČR zachovejte klid – nevytvářejte zbytečné konflikty.
+                            </p>
+                            <p class="italic">Leták vytvořil Robick</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- SEKCE GUESTBOOK -->
+                <section id="guestbook" class="content-section">
+
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-orange-600 tracking-wide text-center mb-10 mt-10">
+                        Guestbook
+                    </h2>
+
+                    <p class="text-gray-500 italic mb-6">Zanechte nám vzkaz</p>
+
+                    <!-- Formulář -->
+                    <form action="" method="post" class="bg-white shadow-md rounded-lg p-6 max-w-xl mb-10 space-y-5">
+                        <div>
+                            <label class="block font-semibold text-gray-700 mb-1">
+                                Jméno: <strong>*</strong>
+                            </label>
+                            <input type="text" name="jmeno" required
+                                   class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+                        </div>
+
+                        <div>
+                            <label class="block font-semibold text-gray-700 mb-1">
+                                E-mail:
+                            </label>
+                            <input type="text" name="email"
+                                   class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-orange-500"/>
+                        </div>
+
+                        <div class="hidden">
+                            <input type="text" name="spam-check" value="2"/>
+                            <label class="text-sm text-gray-500">
+                                Napište prosím číslicí, kolik je jedna plus jedna (anti-spam) *
+                            </label>
+                        </div>
+
+                        <div>
+                            <label class="block font-semibold text-gray-700 mb-1">
+                                Vzkaz: <strong>*</strong>
+                            </label>
+                            <textarea name="body" required
+                                      class="w-full border border-gray-300 rounded-md px-4 py-2 min-h-[100px] focus:outline-none focus:ring-2 focus:ring-orange-500 resize-y"></textarea>
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <label class="text-sm text-gray-500">(* povinné)</label>
+                            <input type="submit" name="submit" value="Odeslat"
+                                   class="bg-orange-500 text-white font-bold px-6 py-2 rounded-md hover:bg-orange-600 cursor-pointer"/>
+                        </div>
+                    </form>
+
+                    <!-- Ukázka zpráv -->
+                    <div class="bg-white border border-gray-400 shadow-sm rounded-lg p-5 max-w-2xl mb-4">
+                        <h3 class="text-lg font-bold text-orange-600 flex justify-between items-center">
+                            <a href="mailto:vsilvestru@gmail.com" class="hover:underline">Vlad</a>
+                            <small class="text-sm text-gray-400 font-normal">17. 5. 2024, 1:54</small>
+                        </h3>
+                        <p class="text-gray-700 mt-2 leading-relaxed">
+                            Byl to magický večer až mi připadá jako neskutečný tento zážitek. Ale pár popálenin tvrdí
+                            opak :) ...
+                        </p>
+                    </div>
+
+                    <div class="bg-white border border-gray-400 shadow-sm rounded-lg p-5 max-w-2xl mb-4">
+                        <h3 class="text-lg font-bold text-orange-600 flex justify-between items-center">
+                            <a href="mailto:lenka.hruba@example.com" class="hover:underline">Lenka</a>
+                            <small class="text-sm text-gray-400 font-normal">3. 6. 2025, 19:42</small>
+                        </h3>
+                        <p class="text-gray-700 mt-2 leading-relaxed">
+                            Nečekala jsem, že jeden obyčejný večer v parku mi přinese tolik radosti a inspirace. Díky
+                            všem, kdo se podělili o energii!
+                        </p>
+                    </div>
+
+                    <div class="bg-white border border-gray-400 shadow-sm rounded-lg p-5 max-w-2xl mb-4">
+                        <h3 class="text-lg font-bold text-orange-600 flex justify-between items-center">
+                            <a href="mailto:michal.kolar@example.com" class="hover:underline">Michal K.</a>
+                            <small class="text-sm text-gray-400 font-normal">2. 6. 2025, 22:15</small>
+                        </h3>
+                        <p class="text-gray-700 mt-2 leading-relaxed">
+                            Zastavil jsem se náhodou... a zůstal až do noci. Oheň, rytmus a smích. Připomnělo mi to, co
+                            je opravdu důležité. Děkuju!
+                        </p>
+                    </div>
+
+                    <div class="bg-white border border-gray-400 shadow-sm rounded-lg p-5 max-w-2xl mb-4">
+                        <h3 class="text-lg font-bold text-orange-600 flex justify-between items-center">
+                            <a href="mailto:stepan.jongler@example.com" class="hover:underline">Štěpán</a>
+                            <small class="text-sm text-gray-400 font-normal">1. 6. 2025, 14:07</small>
+                        </h3>
+                        <p class="text-gray-700 mt-2 leading-relaxed">
+                            Konečně jsem potkal lidi, co mají vášeň pro žonglování i oheň! Už se těším na další úterý.
+                            Příště přinesu i svoje poi!
+                        </p>
+                    </div>
+
+                </section>
+
+                <!-- SEKCE KONTAKT -->
+                <section id="kontaktSekce" class="content-section ">
+
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-fireRed tracking-wide text-center mb-10 mt-10 ">
+                        Kontakt
+                    </h2>
+
+                    <div class="relative w-full max-w-4xl mx-auto">
+                        <img src="images/bg-kontakt.gif" alt="Kontakt background"
+                             class="w-full h-auto object-contain rounded-lg shadow-lg"/>
+                        <div class="absolute inset-0 flex flex-col justify-center items-center text-center p-6">
+                            <p class="text-lg md:text-xl font-semibold text-fireRed drop-shadow-md">Napište nám!</p>
+                            <a href="mailto:info@tribofuego.org"
+                               class="mt-2 text-black underline underline-offset-4 hover:text-orange-300 transition drop-shadow-md">
+                                info@tribofuego.org
+                            </a>
+                        </div>
+                    </div>
+
+                </section>
+
+
+            </div>
+
+            <div id="pagination-controls"
+                 class="absolute bottom-[-25px] w-[100%] mb-10 left-1/2 transform -translate-x-1/2 mt-8 flex flex-wrap justify-center items-center gap-2 z-[200]">
+                <!-- Pagination buttons will be inserted here by JavaScript -->
+            </div>
+
+        </main>
     </div>
-
-    <div id="content-bottom"></div>
-
-    <ul id="menu">
-        <li class="kdo-jsme"><a href="/kdo-jsme"><span></span>kdo jsme</a></li>
-        <li class="galerie"><a href="/galerie"><span></span>galerie</a></li>
-        <li class="srazy"><a href="/srazy"><span></span>srazy</a></li>
-        <li class="gb"><a href="/guestbook"><span></span>guest book</a></li>
-        <li class="video"><a href="/video"><span></span>video</a></li>
-        <li class="kontakt"><a href="/kontakt"><span></span>kontakt</a></li>
-
-    </ul>
-
-    <div class="cleaner"></div>
-
+</div>
 </div>
 </body>
+
 </html>
